@@ -9,8 +9,8 @@ services:
     #   - COUCHDB_USER=username # enter the desired CouchDB admin username
     #   - COUCHDB_PASSWORD=password # enter the desired CouchDB admin password
     volumes:
-      - ./data:/opt/couchdb/data
-      - ./local.ini:/opt/couchdb/etc/local.ini
+      - ./couchdb-data:/opt/couchdb/data
+      - ./couchdb-etc:/opt/couchdb/etc/local.d
     ports:
       - 5984:5984
     restart: unless-stopped
