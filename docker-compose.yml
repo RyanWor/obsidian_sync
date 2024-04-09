@@ -3,7 +3,7 @@ services:
   couchdb:
     image: couchdb:latest
     container_name: obsidian-livesync
-    user: 1000:1000
+    user: 1026:100
     env_file: couchdb.env
     # environment:
     #   - COUCHDB_USER=username # enter the desired CouchDB admin username
